@@ -31,6 +31,7 @@ TouchUI.prototype.DOM.move.navbar = {
 
 		// Move the navbar temp plugin
 		this.plugins.navbarTemp.call(this);
+		this.plugins.gcodebar.call(this);
 		this.plugins.psuControl.call(this);
 
 	}
