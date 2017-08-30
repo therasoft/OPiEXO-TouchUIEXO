@@ -921,7 +921,7 @@ TouchUI.prototype.DOM.init = function() {
 	this.DOM.move.terminal.init.call(this);
 
 	// Move connection sidebar into a new modal
-	this.DOM.move.connection.init(this.DOM.create.tabbar);
+	this.DOM.move.sidebar_plugin_gcodebar.init(this.DOM.create.tabbar);
 
 	// Manipulate controls div
 	this.DOM.move.controls.init();
@@ -1939,11 +1939,11 @@ TouchUI.prototype.DOM.move.afterTabAndNav = function() {
 
 }
 
-TouchUI.prototype.DOM.move.connection = {
+TouchUI.prototype.DOM.move.sidebar_plugin_gcodebar = {
 	$container: null,
-	containerId: "connection_dialog",
+	containerId: "gcodebar_dialog",
 	$cloneContainer: $("#usersettings_dialog"),
-	$cloneModal: $("#connection_wrapper"),
+	$cloneModal: $("#sidebar_plugin_gcodebar_wrapper"),
 	cloneTo: "#all_touchui_settings > ul",
 
 	init: function( tabbar ) {
