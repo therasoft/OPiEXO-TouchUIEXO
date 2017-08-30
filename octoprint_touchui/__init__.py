@@ -83,10 +83,10 @@ class touchui_core(	touchui_api,
 				displayName="TouchUI",
 				displayVersion=self._plugin_version,
 				type="github_release",
-				user="BillyBlaze",
+				user="therasoft",
 				repo="OctoPrint-TouchUI",
 				current=self._plugin_version,
-				pip="https://github.com/BillyBlaze/OctoPrint-TouchUI/archive/{target_version}.zip"
+				pip="https://github.com/therasoft/OPiEXO-TouchUIEXO/archive/{target_version}.zip"
 			)
 		)
 
