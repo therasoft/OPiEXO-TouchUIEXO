@@ -921,7 +921,7 @@ TouchUI.prototype.DOM.init = function() {
 	this.DOM.move.terminal.init.call(this);
 
 	// Move connection sidebar into a new modal
-	this.DOM.move.sidebar_plugin_gcodebar.init(this.DOM.create.tabbar);
+	this.DOM.move.sidebar_plugin_exoextras.init(this.DOM.create.tabbar);
 
 	// Manipulate controls div
 	this.DOM.move.controls.init();
@@ -1432,11 +1432,11 @@ TouchUI.prototype.plugins.navbarTemp = function() {
 
 }
 
-TouchUI.prototype.plugins.gcodebar = function() {
+TouchUI.prototype.plugins.exoextras = function() {
 
 	// Manually move navbar temp (hard move)
-	if( $("#navbar_plugin_gcodebar").length > 0 ) {
-		var navBarTmp = $("#navbar_plugin_gcodebar").appendTo(this.DOM.create.dropdown.container);
+	if( $("#navbar_plugin_exoextras").length > 0 ) {
+		var navBarTmp = $("#navbar_plugin_exoextras").appendTo(this.DOM.create.dropdown.container);
 		$('<li class="divider"></li>').insertBefore(navBarTmp);
 	}
 
@@ -1939,11 +1939,11 @@ TouchUI.prototype.DOM.move.afterTabAndNav = function() {
 
 }
 
-TouchUI.prototype.DOM.move.sidebar_plugin_gcodebar = {
+TouchUI.prototype.DOM.move.sidebar_plugin_exoextras = {
 	$container: null,
-	containerId: "gcodebar_dialog",
+	containerId: "exoextras_dialog",
 	$cloneContainer: $("#usersettings_dialog"),
-	$cloneModal: $("#sidebar_plugin_gcodebar_wrapper"),
+	$cloneModal: $("#sidebar_plugin_exoextras_wrapper"),
 	cloneTo: "#all_touchui_settings > ul",
 
 	init: function( tabbar ) {
